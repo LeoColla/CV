@@ -1,0 +1,99 @@
+
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+header{
+    text-align: center;
+    color: antiquewhite;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Times', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura disponível */
+}
+/*PRIMEIRA SESSÃO*/
+section#s0 {
+    order: 1; /* Garante que a seção 1 fique à esquerda */
+    width: 2%;
+    background-color: #2a36a3;
+}
+section#s1{
+    order: 2; /* Garante que a seção 1 fique à esquerda */
+    flex: 0.5;
+    background-color: #dcdeff;
+    border-radius:0 30px 30px 0 ;
+}
+
+
+img{
+    display: block; /* Faz a imagem ser um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    margin-top: 3%;
+    max-width: 50% ;
+    height: auto;
+    border-radius: 50%;
+}
+section #nv1,#nv12,article{
+    overflow-wrap: break-word;
+    font-size: 20px;
+    font-family: 'Times', serif;
+    margin-left: 10%;
+}
+nav p strong{
+    color: #2a36a3;
+}
+nav#nv12 p strong{
+    color: #000000;
+}
+
+
+
+
+
+/*SEGUNDA SESSÃO*/
+section#s2 {
+    order: 3; /* Garante que a seção 2 fique à direita */
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+section article{
+    margin: 10px;
+}
+
+section#s2 header{
+    font-size: 3rem;
+    padding: 0;
+    text-align: left;
+}
+
+
+header#h2 {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: #2a36a3;
+    margin:0;
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+footer {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2a36a3;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+
+  }
